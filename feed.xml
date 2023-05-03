@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-03T12:59:52+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">yuitoTDF</title><subtitle>个人博客 website</subtitle><entry><title type="html">Lspatch使用</title><link href="http://localhost:4000/2023/05/02/android-uselspatch.html" rel="alternate" type="text/html" title="Lspatch使用" /><published>2023-05-02T00:00:00+08:00</published><updated>2023-05-02T00:00:00+08:00</updated><id>http://localhost:4000/2023/05/02/android-uselspatch</id><content type="html" xml:base="http://localhost:4000/2023/05/02/android-uselspatch.html"><![CDATA[<h1 id="前言">前言</h1>
+
+<p>xp模块可以使用户获得应用原本所没有的功能。
+使用模块需要修改应用。对于Root用户来说，使用Lsposed是个不错的选择，也方便。
+但是大多数用户没有将手机Root。
+所以Lsposed的开发者做了一款功能相对不够全面，但仍能实现修改应用功能的工具:Lspatch。
+<strong>Lspatch不需要Root权限运行。</strong>而且，lspatch还具备一种模块注入的模式:便携模式。
+便携模式可以直接把注入模块后的应用打包。这样的应用运行不再需要依靠Lspatch，可以分享给其他人。</p>
+
+<p>下面我以QQ做示例，为大家演示Lspatch的使用过程。</p>
+
+<p>成品请见<a href="https://yuito.cnblogs.com/p/share.html">资源分享帖</a>。</p>
+
+<p>提一嘴:安装之前切记卸载原应用(记得备份)，否则签名不一致会安装失败。
+操作过程中若出错，试试重启手机或将应用停止运行。</p>
+
+<hr />
+
+<h1 id="-准备">&gt; 准备</h1>
+
+<p>在这里，我选择了开源的Qa模块注入到QQ中，以实现防撤回功能。</p>
+
+<ol>
+  <li>
+    <p>Lspatch:<a href="https://github.com/LSPosed/LSPatch">https://github.com/LSPosed/LSPatch</a></p>
+  </li>
+  <li>
+    <p>Qa模块(全面叫QAuxiliary):<a href="https://github.com/cinit/QAuxiliary">https://github.com/cinit/QAuxiliary</a></p>
+  </li>
+  <li>
+    <p>QQ安装包:<a href="https://im.qq.com/download">https://im.qq.com/download</a></p>
+  </li>
+  <li>
+    <p>一部安卓手机，可以使用模拟器，但千万不要使用安卓子系统，因为没有文件目录体系。</p>
+  </li>
+</ol>
+
+<p>把上面的资源全部放到安卓手机里。注意要明确文件的位置，以便使用。</p>
+
+<h1 id="portable">&gt; 便携模式</h1>
+
+<p>便携模式可以直接把注入模块后的应用打包。
+这样的应用运行不需要依靠Lspatch，可以分享给其他人。</p>
+
+<ol>
+  <li>
+    <p>安装Lspatch。
+lspatch安装完长这样:
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230123104020192-976092438.png" alt="img" />
+shizuku我们不理，目前用不着。</p>
+  </li>
+  <li>
+    <p>安装完成后，进入Lspatch，下方点击管理，点击加号:
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230123104316291-106658595.png" alt="img" />
+首次使用会提示选择一个目录来存储已修复的apk，选择自己方便调用的文件夹，并给予存储权限。</p>
+  </li>
+  <li>
+    <p>此时弹出框有两个选项:
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230123110052476-42252646.png" alt="img" />
+如果已经安装QQ，可以选择下面的”选择已安装的应用程序”;
+如果未安装，选择上面”从存储目录中选择(多个)apk”.
+然后在弹出的界面找到QQ(或安装包).选择完毕进入修补界面如下:
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230123110152987-1086773061.png" alt="img" /></p>
+  </li>
+  <li>
+    <p>选择便携模式，点击”嵌入模块”,选择模块qa。
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230123110526966-1947196900.png" alt="img" />
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230123110403942-1429620359.png" alt="img" /></p>
+  </li>
+  <li>
+    <p>点击右下角“开始修补”，等待修补完成。
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230123110556745-1167412557.png" alt="img" /></p>
+  </li>
+  <li>
+    <p>进入手机的文件管理器，查找apk
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230123110829420-807054232.png" alt="img" />
+这样，我们便得到了嵌入了qa的qq.</p>
+  </li>
+</ol>
+
+<h1 id="local">&gt; 本地模式</h1>
+
+<p>本地模式，顾名思义只能在本地运行。
+它不再嵌入模块，而只是修改应用以模块得以使用。
+缺点很明显，即需要Lspatch在后台运行，应用才可正常运作。
+优点是可以灵活管理模块，模块更新不需要重新打包。</p>
+
+<ol>
+  <li>
+    <p>同便携模式1-3步，进入修补界面，选择本地模式。
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230123110152987-1086773061.png" alt="img" /></p>
+  </li>
+  <li>
+    <p>直接开始修补。</p>
+  </li>
+  <li>
+    <p>修补完成后，手动找到安装包安装。(lspatch中的安装键需shizuku赋权，如果你会用shizuku也可以。)</p>
+  </li>
+  <li>
+    <p>安装后重启手机(这是一个好习惯)，打开Lspatch。在管理-应用里面会发现修补好的应用，点击后选择作用域，选择要使用的模块。
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230126200854121-1621665622.png" alt="img" />
+<img src="https://img2023.cnblogs.com/blog/3044840/202301/3044840-20230126200910608-888981367.png" alt="img" />
+此时的模块需安装。</p>
+  </li>
+</ol>
+
+<h1 id="cmd">&gt; 控制台合成安装包</h1>
+
+<p>Lspatch还提供了另一种打包方式:从电脑打包.
+通过他提供的一个jar包，打包出来本地模式或便携模式的包。</p>
+
+<p>准备资源:</p>
+<ol>
+  <li>Java环境 推荐使用集成的Java开发环境，如Android Studio，安装后无需启动Android Studio即可使用Java</li>
+  <li><code class="language-plaintext highlighter-rouge">lspatch.jar</code> <a href="https://github.com/LSPosed/LSPatch/releases/latest">https://github.com/LSPosed/LSPatch/releases/latest</a></li>
+  <li>应用、模块的apk</li>
+</ol>
+
+<p>在<code class="language-plaintext highlighter-rouge">lspatch.jar</code>所在的目录运行cmd.
+控制台输入以下命令:</p>
+
+<ul>
+  <li>本地模式:<code class="language-plaintext highlighter-rouge">java -jar lspatch.jar xxx.apk -manager -l 2</code></li>
+  <li>便携模式:<code class="language-plaintext highlighter-rouge">java -jar lspatch.jar xxx.apk [-m 模块1.apk [-m 模块2.apk ...]] -l 2</code></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">xxx.apk</code>为要修改的应用安装包.</p>
+
+<h1 id="faq">&gt; FAQ</h1>
+
+<p>Q1: 本地模式修补后在管理-应用-【修补好的应用】-模块作用域里找不到模块?
+A1: 模块要先安装在手机里。</p>
+
+<p>Q2: 电脑控制台无法正常运行lspatch.jar，提示<code class="language-plaintext highlighter-rouge">Java.lang.UnsupportedClassVersionError</code>?
+A2: 运行JSE版本过低。推荐直接安装Java集成开发环境，如IDEA、Android Studio，可以避免java版本过低。</p>
+
+<p>Q3: 首次使用会提示选择一个目录来存储已修复的apk，可是没有目录？
+A3: Lspatch应用设置-权限设置-读写文件权限-允许。
+Q3.1: 还是不行?
+A3.1: 不要在Windows Subsystem for Android™ 上测试。若非如此，请重启手机。</p>
+
+<p>Q4: 便携模式找不到生成后的安装包?
+A4: 请检查修补日志最后一行是否提示出错。新版安卓隐私政策升级，文件管理器可能无法及时读取到文件，请手动到第二步的目录下查找或重启手机。</p>
+
+<p>Q5: 应用修补后按”安装”提示Shizuku服务未连接?
+A5: 属正常情况。Lspatch可搭配Shizuku使用，方便卸载、安装应用等操作。没有Shizuku的用户可以手动卸载原应用后手动安装修补完的应用。</p>
+
+<hr />
+
+<hr />
+
+<blockquote>
+  <blockquote>
+    <p>The End
+Yuito 2023</p>
+  </blockquote>
+</blockquote>]]></content><author><name></name></author><category term="android" /><summary type="html"><![CDATA[前言]]></summary></entry></feed>
