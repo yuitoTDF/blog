@@ -16,25 +16,39 @@
 ## Tag list
 
   - name: 计算机入门 
+
     slug: computer_start
+
   - name: Bat
+
     slug: bat 
+
   - name: C#
+
     slug: csharp
+
   - name: C++
+
     slug: cpp
+
   - name: Android
+
     slug: android
+
   - name: Other posts
+
     slug: other 
+
 
 ## Thanks
 
-    Bulid with [Jekyll](http://jekyllcn.com/)
-    Use [Lanyon](https://github.com/poole/lanyon) Theme
+    - Bulid with [Jekyll](http://jekyllcn.com/)
+    - Use [Lanyon](https://github.com/poole/lanyon) Theme
 
 ## Other Sites
 
+| 渠道 | Link |
+| :---: | :---: |
 | `CSDN` | <https://blog.csdn.net/yuito6018> |
 | `Cnblogs博客园` | <https://yuito.cnblogs.com/> |
 | `知乎` | <https://www.zhihu.com/people/zi-he-du-zhan> |
