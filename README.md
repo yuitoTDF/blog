@@ -16,34 +16,22 @@
 ## Tag list
 
   - name: 计算机入门 
-
     slug: computer_start
-
   - name: Bat
-
-    slug: bat 
-
+    slug: bat
   - name: C#
-
     slug: csharp
-
   - name: C++
-
     slug: cpp
-
   - name: Android
-
     slug: android
-
   - name: Other posts
-
     slug: other 
-
 
 ## Thanks
 
-    - Bulid with [Jekyll](http://jekyllcn.com/)
-    - Use [Lanyon](https://github.com/poole/lanyon) Theme
+  - Bulid with [Jekyll](http://jekyllcn.com/)
+  - Use [Lanyon](https://github.com/poole/lanyon) Theme
 
 ## Other Sites
 
