@@ -1,0 +1,32 @@
+/* HomePage */ 
+
+.masthead-title a{
+    color: aquamarine;
+    font-size: 1.6em ;
+    text-decoration: none;
+}
+strong.posts_list {
+    color: brown;
+    font-size: x-large;
+}
+a.tag_name_in_home {
+    color: brown;
+    font-size: x-large;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+a.post_name_in_home {
+    color: indigo;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+a.post_name_in_home:hover,.tag_name_in_home:hover {
+    filter: blur(0.2px);
+    font-size: 32px; 
+    transition: all 0.2s;
+}
+a.post_name_in_home:mouseleave,.tag_name_in_home:mouseleave {
+    filter: blur(0px);
+    font-size: 25px;
+}
