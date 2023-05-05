@@ -15,18 +15,9 @@
 
 ## Tag list
 
-  - name: 计算机入门 
-    slug: computer_start
-  - name: Bat
-    slug: bat
-  - name: C#
-    slug: csharp
-  - name: C++
-    slug: cpp
-  - name: Android
-    slug: android
-  - name: Other posts
-    slug: other 
+  [`C++`](https://yuitotdf.github.io/blog/tags/cpp) [`C#`](https://yuitotdf.github.io/blog/tags/csharp)
+  [`Bat`](https://yuitotdf.github.io/blog/tags/bat) [`Android`](https://yuitotdf.github.io/blog/tags/android)
+  [`计算机入门`](https://yuitotdf.github.io/blog/tags/computer_start)
 
 ## Thanks
 
