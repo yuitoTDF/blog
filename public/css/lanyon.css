@@ -218,7 +218,7 @@ a.sidebar-nav-item:focus {
   align-items: center;
   padding: .25rem .75rem;
   color: #505050;
-  background-color: #3c3232;
+  background-color: #fff;
   border-radius: .25rem;
   cursor: pointer;
 }
@@ -555,61 +555,4 @@ a.pagination-item:hover {
 /* Only one tweak for a reverse layout */
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
-}
-
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1c1c1c;
-    color: #f8f8f8;
-  }
-  pre {
-    background-color: #2b2b2b;
-    border: 1px solid #444;
-    color: #f8f8f8;
-  }
-  code {
-    background-color: #2b2b2b;
-    border: 1px solid #444;
-    color: #f8f8f8;
-  }
-  a {
-    color: #ff4081;
-  }
-  .post-header {
-    border-color: #f8f8f8;
-  }
-  .post-header .post-title a {
-    color: #f8f8f8;
-  }
-  .post-meta {
-    color: #b0bec5;
-  }
-  .post-list li {
-    border-color: #f8f8f8;
-  }
-  .tags a {
-    background-color: #1c1c1c;
-    color: #f8f8f8;
-    border-color: #f8f8f8;
-  }
-  .tags a:hover {
-    background-color: #f8f8f8;
-    color: #1c1c1c;
-  }
-  .pagination a {
-    color: #ff4081;
-    background-color: #1c1c1c;
-    border-color: #f8f8f8;
-  }
-  .pagination a:hover {
-    color: #1c1c1c;
-    background-color: #f8f8f8;
-    border-color: #1c1c1c;
-  }
-}
-
-.post-title {
-  font-size: 3rem; /* Change this value to make the title bigger or smaller */
-  margin: 1.5rem 0 0.5rem 0;
 }

@@ -30,3 +30,62 @@ a.post_name_in_home:mouseleave,.tag_name_in_home:mouseleave {
     filter: blur(0px);
     font-size: 25px;
 }
+
+
+/* Dark mode styles */
+body {
+  background-color: #1c1c1c;
+  color: #f8f8f8;
+}
+.sidebar-toggle {
+  background-color: #3c3232;
+}
+pre {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  color: #f8f8f8;
+}
+code {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  color: #f8f8f8;
+}
+a {
+  color: #ff4081;
+}
+.post-header {
+  border-color: #f8f8f8;
+}
+.post-header .post-title a {
+  color: #f8f8f8;
+}
+.post-meta {
+  color: #b0bec5;
+}
+.post-list li {
+  border-color: #f8f8f8;
+}
+.tags a {
+  background-color: #1c1c1c;
+  color: #f8f8f8;
+  border-color: #f8f8f8;
+}
+.tags a:hover {
+  background-color: #f8f8f8;
+  color: #1c1c1c;
+}
+.pagination a {
+  color: #ff4081;
+  background-color: #1c1c1c;
+  border-color: #f8f8f8;
+}
+.pagination a:hover {
+  color: #1c1c1c;
+  background-color: #f8f8f8;
+  border-color: #1c1c1c;
+}
+ 
+.post-title {
+    font-size: 3rem; /* Change this value to make the title bigger or smaller */
+    margin: 1.5rem 0 0.5rem 0;
+}
