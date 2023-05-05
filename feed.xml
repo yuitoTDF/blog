@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>yuitoTDF</title>
- <link href="/atom.xml" rel="self"/>
- <link href="/"/>
- <updated>2023-05-05T12:57:04+08:00</updated>
- <id></id>
+ <link href="https://yuitotdf.github.io/blog/atom.xml" rel="self"/>
+ <link href="https://yuitotdf.github.io/blog/"/>
+ <updated>2023-05-05T13:02:51+08:00</updated>
+ <id>https://yuitotdf.github.io/blog</id>
  <author>
    <name>yuitoTDF</name>
    <email>yuitotdf@outlook.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Lspatch使用</title>
-   <link href="//android-uselspatch/"/>
+   <link href="https://yuitotdf.github.io/blog/android-uselspatch/"/>
    <updated>2023-05-02T00:00:00+08:00</updated>
-   <id>//android-uselspatch</id>
+   <id>https://yuitotdf.github.io/blog//android-uselspatch</id>
    <content type="html">&lt;h1 id=&quot;前言&quot;&gt;前言&lt;/h1&gt;
 
 &lt;p&gt;xp模块可以使用户获得应用原本所没有的功能。
